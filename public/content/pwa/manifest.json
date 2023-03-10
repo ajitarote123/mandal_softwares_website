@@ -1,0 +1,43 @@
+{
+  "name": "Mandal Softwares",
+  "short_name": "Mandal Softwares",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#5f9ea0",
+  "theme_color": "#5f9ea0",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "72x72"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "96x96"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png","sizes": "128x128"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "144x144"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "152x152"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "384x384"
+    },
+    {
+      "src": "/content/images/MandalLogo.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}
