@@ -1,0 +1,77 @@
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #9acff9;
+ /* color: #f6fbff;*/
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,600&family=Sarabun&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+
+ 
+}
+
+.activeS {
+  text-decoration: none;
+
+  
+
+  border-bottom: 4px solid rgba(10, 71, 204, 0.596);
+}
+
+.defaultS {
+  text-decoration: none;
+ 
+}
+
+.NestedactiveS {
+  text-decoration: none;
+  border-bottom: 4px solid orange;
+}
+
+.NesteddefaultS {
+  background-color:#61dafb;
+  text-decoration: none;
+ 
+}
+
+
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  background:black;
+  background:rgba(0,0,0,0.8);
+
+  filter:blur(4px);
+  -o-filter:blur(4px);
+  -ms-filter:blur(4px);
+  -moz-filter:blur(4px);
+ 
+
+}
+
+
+
+
+
