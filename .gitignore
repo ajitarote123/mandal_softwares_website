@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+dist/
+
+# Old CodeIgniter website (reference only, not deployed)
+mandal_softwares_website/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
