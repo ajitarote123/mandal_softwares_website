@@ -20,7 +20,7 @@ export const en: Translations = {
   meta: {
     title: 'Mandal Softwares — Software Studio',
     description:
-      'Mandal Softwares builds web, mobile, and business software. Engineering support for software teams. Ahilyanagar, Maharashtra.',
+      'Mandal Softwares builds web, mobile, and business software. Product software and engineering support for software teams.',
   },
   nav: {
     devSupport: 'Dev teams',
@@ -38,7 +38,7 @@ export const en: Translations = {
   },
   sections: {
     hero: {
-      eyebrow: 'Software studio · Since 2019',
+      eyebrow: 'Software studio · Since 2016',
       title: 'Turn your idea into',
       titleEm: 'software that works',
       sub: 'We build product software and partner with software companies and developers who need a reliable engineering bench.',
@@ -88,7 +88,7 @@ export const en: Translations = {
     clients: {
       eyebrow: 'Clients',
       title: 'Teams that trust us.',
-      names: ['Rangkatha', 'Nirvana', 'Manovedh', 'RetailCo', 'EduFirst', 'HealthSync', 'AdPulse', 'LocalBiz'],
+      names: ['DEXT', 'Indus Infotech',  'NZ Solutions', 'Stratveda', 'NirvanaFresh', 'Manovedh', 'RangKatha', 'PrimePlex Pictures', 'OGTA'],
     },
     reviews: {
       eyebrow: 'Reviews',

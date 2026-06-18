@@ -6,10 +6,10 @@ declare(strict_types=1);
  */
 
 const ALLOWED_ORIGINS = [
-    'https://company.mandal.one',
-    'http://company.mandal.one',
-    'http://localhost:5173',
-    'http://127.0.0.1:5173',
+  'https://company.mandal.one',
+  'http://company.mandal.one',
+  'https://software.mandal.one',
+  'http://software.mandal.one',
 ];
 
 function cors_handle_preflight(): void

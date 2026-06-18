@@ -1,16 +1,14 @@
-export type Locale = 'en' | 'hi' | 'mr'
+export type Locale = 'en' | 'mr'
 
-export const LOCALES: Locale[] = ['en', 'hi', 'mr']
+export const LOCALES: Locale[] = ['en', 'mr']
 
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: 'EN',
-  hi: 'हि',
   mr: 'म',
 }
 
 export const LOCALE_NAMES: Record<Locale, string> = {
   en: 'English',
-  hi: 'हिन्दी',
   mr: 'मराठी',
 }
 

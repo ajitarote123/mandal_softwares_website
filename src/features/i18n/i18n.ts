@@ -4,7 +4,7 @@ export const LOCALE_STORAGE_KEY = 'ms-locale'
 
 export function detectLocale(): Locale {
   const lang = (navigator.language || 'en').toLowerCase()
-  if (lang.startsWith('hi')) return 'hi'
+  // if (lang.startsWith('hi')) return 'hi'
   if (lang.startsWith('mr')) return 'mr'
   return 'en'
 }
@@ -12,7 +12,7 @@ export function detectLocale(): Locale {
 export function readStoredLocale(): Locale | null {
   try {
     const stored = localStorage.getItem(LOCALE_STORAGE_KEY)
-    if (stored === 'en' || stored === 'hi' || stored === 'mr') return stored
+    if (stored === 'en' || stored === 'mr') return stored
   } catch {
     /* ignore */
   }

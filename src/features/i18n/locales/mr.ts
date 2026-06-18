@@ -13,16 +13,16 @@ const mrWork = [
 export const mr: Translations = {
   ...en,
   meta: {
-    title: 'Mandal Softwares — सॉफ्टवेअर स्टुडिओ',
+    title: 'मंडळ सॉफ्टवेअर्स — सॉफ्टवेअर स्टुडिओ',
     description:
-      'Mandal Softwares वेब, मोबाइल आणि व्यवसाय सॉफ्टवेअर तयार करते. सॉफ्टवेअर संघांसाठी अभियांत्रिकी मदत. अहिल्यानगर, महाराष्ट्र.',
+      'मंडळ सॉफ्टवेअर्स वेब, मोबाइल आणि व्यवसाय सॉफ्टवेअर तयार करते. डेव्हलपर टीम्ससाठी टेक्निकल मदत करते.',
   },
   nav: {
-    devSupport: 'डेव संघ',
-    work: 'काम',
-    process: 'प्रक्रिया',
-    contact: 'संपर्क',
-    cta: 'प्रकल्प सुरू करा',
+    devSupport: 'डेव्हलपर टीम्स',
+    work: 'आमचे काम',
+    process: 'आमची प्रक्रिया',
+    contact: 'संपर्क करा',
+    cta: 'नवीन प्रोजेक्ट सुरु करा',
     menuOpen: 'मेनू उघडा',
     menuClose: 'मेनू बंद करा',
   },
@@ -30,17 +30,17 @@ export const mr: Translations = {
   sections: {
     ...en.sections,
     hero: {
-      eyebrow: 'सॉफ्टवेअर स्टुडिओ · २०१९ पासून',
+      eyebrow: 'सॉफ्टवेअर स्टुडिओ · २०१६ पासून',
       title: 'तुमच्या कल्पनेला बनवा',
       titleEm: 'कार्यरत सॉफ्टवेअर',
-      sub: 'आम्ही उत्पादन सॉफ्टवेअर तयार करतो आणि विश्वासार्ह अभियांत्रिकी मदत हवी असलेल्या सॉफ्टवेअर कंपन्या व डेव्हलपर्सशी भागीदारी करतो.',
+      sub: 'आम्ही सॉफ्टवेअर तयार करतो आणि टेक्निकल मदत हवी असलेल्या सॉफ्टवेअर कंपन्या व डेव्हलपर्सशी भागीदारी करतो.',
       ctaPrimary: 'प्रकल्प सुरू करा',
-      ctaSecondary: 'डेव संघ मदत',
+      ctaSecondary: 'डेव्हलपर टीम्स मदत',
       scroll: 'खाली स्क्रोल करा',
     },
     proof: {
       years: 'वर्षे अनुभव',
-      projects: 'प्रकल्प पूर्ण',
+      projects: 'प्रोजेक्ट पूर्ण',
       clients: 'सक्रिय ग्राहक',
     },
     services: {
@@ -49,11 +49,11 @@ export const mr: Translations = {
       web: 'वेब',
       webDetail: 'साइट्स आणि वेब अ‍ॅप्स',
       mobile: 'मोबाइल',
-      mobileDetail: 'iOS, Android, हायब्रिड',
-      erp: 'CRM / ERP',
+      mobileDetail: 'आयओएस, एंड्रॉईड, हायब्रिड',
+      erp: 'सीआरएम / ईआरपी',
       erpDetail: 'ऑपरेशन्स आणि वर्कफ्लो',
       commerce: 'ई‑कॉमर्स',
-      commerceDetail: 'विक्री करणारी स्टोअर्स',
+      commerceDetail: 'ई‑कॉमर्स स्टोअर्स',
     },
     devSupport: {
       eyebrow: 'सॉफ्टवेअर संघांसाठी',
@@ -64,7 +64,7 @@ export const mr: Translations = {
       caps: {
         development: 'डेव्हलपमेंट',
         debugging: 'डिबगिंग',
-        devops: 'DevOps',
+        devops: 'डेव्हऑप्स',
         deploy: 'डिप्लॉय मदत',
         infra: 'इन्फ्रा डिझाइन',
         troubleshoot: 'समस्या निवारण',
@@ -72,7 +72,7 @@ export const mr: Translations = {
         planning: 'सॉफ्टवेअर नियोजन',
       },
     },
-    work: { eyebrow: 'मागील काम', title: 'आम्ही पूर्ण केलेले प्रकल्प.', items: mrWork },
+    work: { eyebrow: 'मागील काम', title: 'आम्ही पूर्ण केलेले प्रोजेक्ट.', items: mrWork },
     clients: {
       eyebrow: 'ग्राहक',
       title: 'आमच्यावर विश्वास ठेवणारे संघ.',

@@ -37,14 +37,14 @@ if (strlen($name) > 120 || strlen($email) > 160 || strlen($subject) > 200 || str
 
 $to = 'mandalsoftwares@gmail.com';
 $mailSubject = '[Mandal Softwares Contact] ' . $subject;
-$body = "New contact form submission from company.mandal.one\r\n\r\n"
+$body = "New contact form submission from Mandal Softwares Website\r\n\r\n"
   . "Name: {$name}\r\n"
   . "Email: {$email}\r\n"
   . "Subject: {$subject}\r\n\r\n"
   . "Message:\r\n{$message}\r\n";
 
 $headers = [
-  'From: Mandal Softwares Website <noreply@company.mandal.one>',
+  'From: Mandal Softwares Website <noreply@mandal.one>',
   'Reply-To: ' . $name . ' <' . $email . '>',
   'X-Mailer: PHP/' . phpversion(),
   'Content-Type: text/plain; charset=UTF-8',
