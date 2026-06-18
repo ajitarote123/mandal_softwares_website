@@ -1,6 +1,7 @@
 import { company } from '../data/company'
 import { useI18n } from '../features/i18n/useI18n'
 import { Reveal } from '../features/motion/Reveal'
+import { ContactForm } from '../components/ContactForm'
 import { SectionShell } from './SectionShell'
 import './ContactSection.css'
 
@@ -44,35 +45,24 @@ export function ContactSection() {
                   </span>
                   {c.location}
                 </dt>
-                <dd>{company.address}</dd>
+                <dd>
+                  {company.address}
+                  <a
+                    className="contact-section__google"
+                    href={company.googleBusiness}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {c.viewGoogle} ↗
+                  </a>
+                </dd>
               </div>
             </dl>
           </div>
         </Reveal>
 
         <Reveal delay={100}>
-          <form
-            className="contact-section__form"
-            onSubmit={(e) => e.preventDefault()}
-            aria-label="Contact"
-          >
-            <div className="contact-section__form-glow" aria-hidden="true" />
-            <label>
-              <span>{c.formName}</span>
-              <input type="text" name="name" autoComplete="name" />
-            </label>
-            <label>
-              <span>{c.formEmail}</span>
-              <input type="email" name="email" autoComplete="email" />
-            </label>
-            <label>
-              <span>{c.formMessage}</span>
-              <textarea name="message" rows={4} />
-            </label>
-            <button type="submit" className="btn btn--primary btn--full">
-              {c.formSubmit}
-            </button>
-          </form>
+          <ContactForm />
         </Reveal>
       </div>
     </SectionShell>

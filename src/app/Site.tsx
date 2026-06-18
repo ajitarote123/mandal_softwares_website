@@ -1,3 +1,4 @@
+import { SeoHead } from '../components/SeoHead'
 import { Shell } from '../components/layout/Shell'
 import { ClientsSection } from '../sections/ClientsSection'
 import { ContactSection } from '../sections/ContactSection'
@@ -12,6 +13,7 @@ import { WorkSection } from '../sections/WorkSection'
 export function Site() {
   return (
     <Shell>
+      <SeoHead />
       <HeroSection />
       <ProofSection />
       <DevSupportSection />

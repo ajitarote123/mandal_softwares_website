@@ -28,7 +28,6 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     applyDocumentLocale(locale)
-    document.title = getMessages(locale).meta.title
   }, [locale])
 
   const t = useMemo(() => getMessages(locale), [locale])

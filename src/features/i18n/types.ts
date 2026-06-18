@@ -122,11 +122,15 @@ export interface Translations {
       email: string
       phone: string
       location: string
+      viewGoogle: string
       formName: string
       formEmail: string
       formMessage: string
+      formSubject: string
       formSubmit: string
       formSending: string
+      formSuccess: string
+      formError: string
     }
   }
   footer: {

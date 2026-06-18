@@ -37,6 +37,12 @@
   color: var(--text-muted);
 }
 
+.site-footer__cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6) var(--space-10);
+}
+
 .site-footer__links {
   display: flex;
   flex-wrap: wrap;
