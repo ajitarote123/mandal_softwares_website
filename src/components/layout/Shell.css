@@ -1,0 +1,11 @@
+.site-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.site-shell__main {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.75rem;
+}

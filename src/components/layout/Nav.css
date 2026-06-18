@@ -1,0 +1,117 @@
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition:
+    background var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    backdrop-filter var(--duration-base) var(--ease-out);
+}
+
+.site-nav--scrolled {
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  min-height: 3.75rem;
+}
+
+.site-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+  z-index: 2;
+}
+
+.site-nav__brand img {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+}
+
+.site-nav__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  z-index: 2;
+}
+
+.site-nav__links {
+  display: none;
+  align-items: center;
+  gap: var(--space-6);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.site-nav__links a:not(.site-nav__cta) {
+  color: var(--text-muted);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.site-nav__links a:not(.site-nav__cta):hover {
+  color: var(--accent);
+}
+
+.site-nav__cta {
+  padding: 0.55rem 1.15rem !important;
+  font-size: var(--text-xs) !important;
+}
+
+.site-nav__menu {
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+  .site-nav__menu {
+    display: none;
+  }
+
+  .site-nav__links {
+    display: flex;
+  }
+}
+
+@media (max-width: 899px) {
+  .site-nav__links--open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    padding: 5.5rem var(--gutter) var(--gutter);
+    background: var(--bg);
+    align-items: stretch;
+    gap: var(--space-2);
+  }
+
+  .site-nav__links--open a {
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .site-nav__links--open .site-nav__cta {
+    margin-top: var(--space-4);
+  }
+}

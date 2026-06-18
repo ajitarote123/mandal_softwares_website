@@ -1,0 +1,30 @@
+.lang-toggle {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  gap: 2px;
+}
+
+.lang-toggle__btn {
+  min-width: 2rem;
+  padding: 0.3rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--text-muted);
+  transition:
+    color var(--duration-base) var(--ease-out),
+    background var(--duration-base) var(--ease-out);
+}
+
+.lang-toggle__btn:hover {
+  color: var(--text);
+}
+
+.lang-toggle__btn--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}

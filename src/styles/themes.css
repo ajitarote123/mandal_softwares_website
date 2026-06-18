@@ -1,0 +1,59 @@
+/* Semantic colors — light theme (default resolved) */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f6f8fb;
+  --bg-subtle: #eef2f7;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --text: var(--brand-ink);
+  --text-muted: #5c6578;
+  --text-faint: #8b95a8;
+  --border: rgba(12, 14, 18, 0.1);
+  --border-strong: rgba(12, 14, 18, 0.16);
+
+  --accent: var(--brand-cyan-dim);
+  --accent-bright: var(--brand-cyan);
+  --accent-soft: rgba(0, 184, 232, 0.1);
+  --accent-glow: rgba(0, 184, 232, 0.28);
+
+  --secondary: var(--brand-slate);
+  --secondary-soft: rgba(74, 85, 104, 0.1);
+
+  --nav-bg: rgba(246, 248, 251, 0.82);
+  --hero-glow-1: rgba(0, 184, 232, 0.14);
+  --hero-glow-2: rgba(74, 85, 104, 0.08);
+  --grain-opacity: 0.04;
+
+  --logo: url('/MLogo.png');
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #080b10;
+  --bg-subtle: #0e1219;
+  --surface: #12161f;
+  --surface-raised: #181d28;
+  --text: #edf1f7;
+  --text-muted: #9aa3b5;
+  --text-faint: #6b7589;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --accent: var(--brand-cyan);
+  --accent-bright: var(--brand-cyan-bright);
+  --accent-soft: rgba(0, 184, 232, 0.12);
+  --accent-glow: rgba(0, 184, 232, 0.35);
+
+  --secondary: #8b9cb3;
+  --secondary-soft: rgba(139, 156, 179, 0.1);
+
+  --nav-bg: rgba(8, 11, 16, 0.82);
+  --hero-glow-1: rgba(0, 184, 232, 0.18);
+  --hero-glow-2: rgba(51, 212, 255, 0.06);
+  --grain-opacity: 0.35;
+
+  --logo: url('/MLogoW.png');
+}

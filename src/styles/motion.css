@@ -1,0 +1,102 @@
+/* Scroll-reveal base */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--duration-reveal) var(--ease-out),
+    transform var(--duration-reveal) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal--fade {
+  transform: none;
+}
+
+.reveal--left {
+  transform: translateX(-24px);
+}
+
+.reveal--left.reveal--visible {
+  transform: translateX(0);
+}
+
+.reveal--scale {
+  transform: scale(0.96);
+}
+
+.reveal--scale.reveal--visible {
+  transform: scale(1);
+}
+
+/* Stagger helper for children */
+.stagger > .reveal:nth-child(1) {
+  --reveal-delay: 0ms;
+}
+.stagger > .reveal:nth-child(2) {
+  --reveal-delay: 80ms;
+}
+.stagger > .reveal:nth-child(3) {
+  --reveal-delay: 160ms;
+}
+.stagger > .reveal:nth-child(4) {
+  --reveal-delay: 240ms;
+}
+.stagger > .reveal:nth-child(5) {
+  --reveal-delay: 320ms;
+}
+.stagger > .reveal:nth-child(6) {
+  --reveal-delay: 400ms;
+}
+
+/* Hover lift for cards */
+.hover-lift {
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out);
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .atmosphere__orb {
+    animation: none;
+  }
+}
+
+[data-reduced-motion='true'] .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+[data-reduced-motion='true'] .atmosphere__orb {
+  animation: none;
+}

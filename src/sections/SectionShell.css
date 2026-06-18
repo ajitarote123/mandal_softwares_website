@@ -1,0 +1,27 @@
+.section-shell__head {
+  margin-bottom: var(--space-10);
+  max-width: 36ch;
+}
+
+.section-shell__head .eyebrow::after {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: var(--space-3);
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: var(--radius-full);
+}
+
+.section-shell__title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.section-shell--alt {
+  background: var(--bg-subtle);
+  border-block: 1px solid var(--border);
+}
