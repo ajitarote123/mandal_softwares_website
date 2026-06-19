@@ -6,7 +6,8 @@ import { ThemeToggleCompact } from '../../features/theme/ThemeToggle'
 import './Nav.css'
 
 const LINKS = [
-  { href: '#dev-support', key: 'devSupport' as const },
+  { href: '#partnership', key: 'partnership' as const },
+  { href: '#capabilities', key: 'capabilities' as const },
   { href: '#work', key: 'work' as const },
   { href: '#process', key: 'process' as const },
 ] as const

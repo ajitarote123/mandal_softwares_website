@@ -16,7 +16,8 @@ export function ServicesSection() {
   ]
 
   return (
-    <SectionShell id="services" eyebrow={s.eyebrow} title={s.title}>
+    <SectionShell id="services" eyebrow={s.eyebrow} title={s.title} alt>
+      <p className="services-section__subtitle body-lg">{s.subtitle}</p>
       <div className="services-section__grid stagger">
         {items.map((item, i) => (
           <Reveal key={item.id} variant="scale">

@@ -1,6 +1,6 @@
 export const company = {
   name: 'Mandal Softwares',
-  domain: 'https://company.mandal.one',
+  domain: 'https://software.mandal.one',
   phone: '+91 8652551424',
   phoneTel: '+918652551424',
   email: 'mandalsoftwares@gmail.com',
@@ -17,32 +17,17 @@ export const company = {
     instagram: 'https://www.instagram.com/mandal_softwares/',
   },
   pitch:
-    'We build web, mobile, and business software — and partner with software companies and developers who need a reliable engineering bench.',
+    'Veteran engineering partnership for software companies, firms, and developers across planning, architecture, debugging, deployment, cloud, infra, delivery, and team practices.',
   services: [
     { id: 'web', label: 'Web', detail: 'Sites & web apps' },
     { id: 'mobile', label: 'Mobile', detail: 'iOS, Android, hybrid' },
     { id: 'erp', label: 'CRM / ERP', detail: 'Operations & workflows' },
     { id: 'commerce', label: 'E‑commerce', detail: 'Stores that convert' },
   ],
-  devSupport: {
-    label: 'For software teams',
-    title: 'Engineering support when you need backup.',
-    body: 'For software companies, product teams, and independent developers — extend your capacity without the hiring overhead.',
-    capabilities: [
-      'Development',
-      'Debugging',
-      'DevOps',
-      'Deploy support',
-      'Infra design',
-      'Troubleshooting',
-      'Architecture design',
-      'Software planning',
-    ],
-  },
   proof: [
-    { value: '7+', label: 'Years building' },
-    { value: '15+', label: 'Projects shipped' },
-    { value: '8+', label: 'Active clients' },
+    { value: '7+', label: 'Years in the field' },
+    { value: '45+', label: 'Projects delivered' },
+    { value: '25+', label: 'Teams supported' },
   ],
   pillars: [
     { title: 'Ship fast', body: 'Lean builds, clear milestones, no endless cycles.' },
@@ -50,8 +35,8 @@ export const company = {
     { title: 'Stay close', body: 'Direct communication from scoping through launch.' },
   ],
   process: [
-    { step: '01', title: 'Discover', body: 'You share the problem. We clarify scope and fit.' },
-    { step: '02', title: 'Build', body: 'Iterative development with regular check-ins.' },
-    { step: '03', title: 'Launch', body: 'Deploy, hand off, and support what we ship.' },
+    { step: '01', title: 'Connect', body: 'You describe where you are stuck.' },
+    { step: '02', title: 'Diagnose', body: 'We map the gap and agree on scope.' },
+    { step: '03', title: 'Partner', body: 'We work alongside you until it is resolved.' },
   ],
 } as const

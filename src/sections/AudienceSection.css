@@ -1,0 +1,41 @@
+.audience-section__grid {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+}
+
+@media (min-width: 720px) {
+  .audience-section__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.audience-section__card {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.audience-section__num {
+  display: block;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.audience-section__card h3 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+}
+
+.audience-section__card p {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--text-muted);
+}

@@ -30,7 +30,7 @@ export function HeroSection() {
               <a href="#contact" className="btn btn--primary">
                 {h.ctaPrimary}
               </a>
-              <a href="#dev-support" className="btn btn--ghost">
+              <a href="#capabilities" className="btn btn--ghost">
                 {h.ctaSecondary}
               </a>
             </div>

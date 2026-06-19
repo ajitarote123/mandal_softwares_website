@@ -12,11 +12,10 @@
     var locale = localStorage.getItem('ms-locale')
     if (!locale) {
       var lang = (navigator.language || 'en').toLowerCase()
-      if (lang.indexOf('hi') === 0) locale = 'hi'
-      else if (lang.indexOf('mr') === 0) locale = 'mr'
+      if (lang.indexOf('mr') === 0) locale = 'mr'
       else locale = 'en'
     }
-    if (locale === 'en' || locale === 'hi' || locale === 'mr') {
+    if (locale === 'en' || locale === 'mr') {
       document.documentElement.lang = locale
     }
   } catch (_) {

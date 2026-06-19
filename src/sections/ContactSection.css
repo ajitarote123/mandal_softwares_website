@@ -63,6 +63,7 @@
 
 .contact-section__google {
   display: inline-block;
+  margin-left: var(--space-2);
   margin-top: var(--space-2);
   font-size: var(--text-sm);
   font-weight: var(--weight-semibold);

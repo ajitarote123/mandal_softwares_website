@@ -24,13 +24,25 @@ export interface ReviewItem {
   source: string
 }
 
+export interface AudienceCard {
+  title: string
+  body: string
+}
+
+export interface CapabilityPillar {
+  title: string
+  summary: string
+  items: string[]
+}
+
 export interface Translations {
   meta: {
     title: string
     description: string
   }
   nav: {
-    devSupport: string
+    partnership: string
+    capabilities: string
     work: string
     process: string
     contact: string
@@ -58,9 +70,29 @@ export interface Translations {
       projects: string
       clients: string
     }
+    partnership: {
+      eyebrow: string
+      audience: string
+      title: string
+      body: string
+      highlight: string
+      cta: string
+    }
+    audience: {
+      eyebrow: string
+      title: string
+      cards: AudienceCard[]
+    }
+    capabilities: {
+      eyebrow: string
+      title: string
+      subtitle: string
+      pillars: CapabilityPillar[]
+    }
     services: {
       eyebrow: string
       title: string
+      subtitle: string
       web: string
       webDetail: string
       mobile: string
@@ -69,23 +101,6 @@ export interface Translations {
       erpDetail: string
       commerce: string
       commerceDetail: string
-    }
-    devSupport: {
-      eyebrow: string
-      audience: string
-      title: string
-      body: string
-      cta: string
-      caps: {
-        development: string
-        debugging: string
-        devops: string
-        deploy: string
-        infra: string
-        troubleshoot: string
-        architecture: string
-        planning: string
-      }
     }
     work: {
       eyebrow: string
@@ -120,6 +135,7 @@ export interface Translations {
       email: string
       phone: string
       location: string
+      address: string
       viewGoogle: string
       formName: string
       formEmail: string

@@ -46,7 +46,7 @@ export function ContactSection() {
                   {c.location}
                 </dt>
                 <dd>
-                  {company.address}
+                  {c.address}
                   <a
                     className="contact-section__google"
                     href={company.googleBusiness}
